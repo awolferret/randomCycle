@@ -6,20 +6,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
-            int number = rand.Next(0, 101);
+            Random random = new Random();
+            int number = random.Next(0, 101);
             int sum = 0;
-            int starNumber = 0;
-            int remains = 0;
-            int divider = 3;
+            Console.WriteLine("Вы хотите числа кратные 3 или 5");
+            int divider = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Число полученное путем рандома: {number}");
 
-            for (int correctNumber = starNumber; correctNumber < number; correctNumber++)
+            for (int i = 0; i < number; i++)
             {
-                if (correctNumber % divider == remains)
+                if (i % divider == 0)
                 {
-                    Console.WriteLine(correctNumber);
-                    sum += correctNumber;
+                    Console.WriteLine(i);
+                    sum += i;
                 }
             }
             Console.WriteLine($"Сумма:{sum}");
