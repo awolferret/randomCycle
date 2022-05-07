@@ -9,7 +9,7 @@ namespace ConsoleApp1
             Random random = new Random();
             int number = random.Next(0, 101);
             int sum = 0;
-            Console.WriteLine("Вы хотите числа кратные 3 или 5");
+            Console.WriteLine("Вы хотите числа кратные 3 или 5?");
             int divider = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine($"Число полученное путем рандома: {number}");
 
