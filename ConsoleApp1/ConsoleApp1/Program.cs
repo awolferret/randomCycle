@@ -22,8 +22,7 @@ namespace ConsoleApp1
                     sum += correctNumber;
                 }
             }
-            Console.WriteLine("Сумма");
-            Console.WriteLine(sum);
+            Console.WriteLine($"Сумма:{sum}");
         }
     }
 }
