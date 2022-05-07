@@ -9,13 +9,13 @@ namespace ConsoleApp1
             Random random = new Random();
             int number = random.Next(0, 101);
             int sum = 0;
-            Console.WriteLine("Вы хотите числа кратные 3 или 5?");
-            int divider = Convert.ToInt32(Console.ReadLine());
+            int dividerThree = 3;
+            int dividerFive = 5;
             Console.WriteLine($"Число полученное путем рандома: {number}");
 
             for (int i = 0; i < number; i++)
             {
-                if (i % divider == 0)
+                if (i % dividerThree == 0 || i % dividerFive == 0)
                 {
                     Console.WriteLine(i);
                     sum += i;
